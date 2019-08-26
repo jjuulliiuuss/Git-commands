@@ -10,17 +10,17 @@ Git-Commands
 * git branch -d feature_x  
 
 2)
-git cherry-pick (copy commit from one branch to another, e.g. if commit was done in wrong branch,e.g. committed in master, but should have to in feature_x, does not delete that commit in master!)  
-git checkout file_x (if added, but not committed yet/ resets that file to last commit)  
-git commit —amend “new description”  
-git commit —amend (includes new added changes into last commit)
+* git cherry-pick (copy commit from one branch to another, e.g. if commit was done in wrong branch,e.g. committed in master, but should have to in feature_x, does not delete that commit in master!)  
+* git checkout file_x (if added, but not committed yet/ resets that file to last commit)  
+* git commit —amend “new description”  
+* git commit —amend (includes new added changes into last commit)
 do both only if not yet pushed to remote repo! because it changes the history
-git reset —soft target-commit-hash-beginning (current changes remain added, e.g. into staging area)
-git reset —mixed target-commit-hash-beginning (current changes into working directory)
-git reset —hard (deletes changes, not tracked files get not deleted)
-git clean -df (cleans all untracked files)
-git checkout target-commit-hash-beginning (,e,g. from the hashes of git reflog, detaches HEAD state. Make a branch from there. To return to master, use git checkout master)
-git revert target-commit-hash-beginning (to add a new commit that undo that commit, advantage: it does not change the history, very good if already pushed to remote or others already pulled)
+* git reset —soft target-commit-hash-beginning (current changes remain added, e.g. into staging area)  
+* git reset —mixed target-commit-hash-beginning (current changes into working directory)  
+* git reset —hard (deletes changes, not tracked files get not deleted)  
+* git clean -df (cleans all untracked files)  
+* git checkout target-commit-hash-beginning (,e,g. from the hashes of git reflog, detaches HEAD state. Make a branch from there. To return to master, use git checkout master)  
+* git revert target-commit-hash-beginning (to add a new commit that undo that commit, advantage: it does not change the history, very good if already pushed to remote or others already pulled)  
 
 
 general)
