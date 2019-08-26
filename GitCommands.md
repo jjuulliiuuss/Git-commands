@@ -1,13 +1,13 @@
 Git-Commands
 
 1)
-git branch feature_x
-git checkout master
-git push -u origin feature_x (unit test)
-(if passed) git pull origin master
-git merge feature_x
-git push origin master
-git branch -d feature_x
+* git branch feature_x  
+* git checkout master  
+* git push -u origin feature_x (unit test)  
+* (if passed) git pull origin master  
+* git merge feature_x  
+* git push origin master  
+* git branch -d feature_x  
 
 2)
 git cherry-pick (copy commit from one branch to another, e.g. if commit was done in wrong branch,e.g. committed in master, but should have to in feature_x, does not delete that commit in master!)
